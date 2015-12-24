@@ -1,5 +1,7 @@
 require('normalize.css');
 require('styles/App.css');
+require('materialize-css/sass/materialize.scss');
+require('materialize-css/js/materialize.js');
 
 import React from 'react';
 
