@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "core-js": "^1.2.6",
+    "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "materialize-css": "^0.97.5",
     "normalize.css": "^3.0.3",
