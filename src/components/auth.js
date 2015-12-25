@@ -1,7 +1,6 @@
-let LocalStorage = require('stores/localStorage.js');
-
 import React from 'react';
 import Router from 'react-router';
+import LocalStorage from 'stores/localStorage';
 
 class AuthComponent extends React.Component {
   render() {

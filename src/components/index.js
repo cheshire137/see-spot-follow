@@ -1,8 +1,8 @@
 var Config = JSON.parse(require('components/config.json'));
-let LocalStorage = require('stores/localStorage.js');
 
 import React from 'react';
 import Router from 'react-router';
+import LocalStorage from 'stores/localStorage';
 
 class IndexComponent extends React.Component {
   componentWillMount() {
@@ -12,9 +12,10 @@ class IndexComponent extends React.Component {
     }
   }
 
-  getInitialState() {
+  constructor(props, context) {
+    super(props, context);
     var scopes = 'user-follow-modify user-follow-read';
-    return {
+    this.state = {
       authUrl: 'https://accounts.spotify.com/authorize' +
                '?client_id=' + Config.clientID +
                '&response_type=token' +
