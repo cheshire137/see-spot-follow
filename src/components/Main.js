@@ -9,10 +9,9 @@ import React from 'react';
 
 class AppComponent extends React.Component {
   render() {
-    var clientId = 'b3613e21f98c43f2bcaf4ba917fedacc';
     var scopes = 'user-follow-modify user-follow-read';
     var spotifyAuthUrl = 'https://accounts.spotify.com/authorize' +
-                         '?client_id=' + clientId +
+                         '?client_id=' + Config.clientID +
                          '&response_type=token' +
                          '&redirect_uri=' + encodeURIComponent(Config.redirectUri) +
                          '&scope=' + encodeURIComponent(scopes);

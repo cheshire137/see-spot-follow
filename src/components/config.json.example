@@ -1,3 +1,4 @@
 {
-  "redirectUri": "http://localhost:8000/webpack-dev-server/"
+  "redirectUri": "http://localhost:8000/webpack-dev-server/",
+  "clientID": "YOUR_SPOTIFY_APP_CLIENT_ID"
 }
