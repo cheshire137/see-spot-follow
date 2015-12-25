@@ -8,6 +8,11 @@ This doesn't actually do anything yet, I'm just getting started.
 
 ## How to Develop
 
+    cp src/components/config.json.example src/components/config.json
+
+Customize src/components/config.json as you like. `redirectUri` should be set
+to the URL where your app is running.
+
     npm install
     npm start
 

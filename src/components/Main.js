@@ -3,18 +3,18 @@ require('materialize-css/sass/materialize.scss');
 require('normalize.css');
 require('styles/app.scss');
 require('materialize-css/js/materialize.js');
+var Config = JSON.parse(require('components/config.json'));
 
 import React from 'react';
 
 class AppComponent extends React.Component {
   render() {
     var clientId = 'b3613e21f98c43f2bcaf4ba917fedacc';
-    var redirectUri = 'http://localhost:8000/webpack-dev-server/';
     var scopes = 'user-follow-modify user-follow-read';
     var spotifyAuthUrl = 'https://accounts.spotify.com/authorize' +
                          '?client_id=' + clientId +
                          '&response_type=token' +
-                         '&redirect_uri=' + encodeURIComponent(redirectUri) +
+                         '&redirect_uri=' + encodeURIComponent(Config.redirectUri) +
                          '&scope=' + encodeURIComponent(scopes);
     return (
       <div className="container">
